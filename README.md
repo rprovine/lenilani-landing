@@ -27,6 +27,10 @@ This is a modern, mobile-responsive landing page showcasing LeniLani Consulting'
   - Monospace font (SF Mono, JetBrains Mono, Fira Code)
   - Fully mobile-responsive
   - Custom favicon with gradient branding
+  - Custom SVG icons with animations (AI neural network, cloud infrastructure, mobile apps)
+  - Product showcase with AI-generated mockup images
+  - Hero section with split layout and circuit board background
+  - Animated floating particles and process flow connectors
 
 ## Tech Stack
 
@@ -42,9 +46,15 @@ This is a modern, mobile-responsive landing page showcasing LeniLani Consulting'
 lenilani/
 ├── public/
 │   ├── index.html          # HTML template with GA4, mobile CSS
-│   └── favicon.svg         # Custom LeniLani branded favicon
+│   ├── favicon.svg         # Custom LeniLani branded favicon
+│   └── images/             # Product mockup images
+│       ├── ai-dashboard.png
+│       ├── cloud-monitoring.png
+│       ├── mobile-app.png
+│       ├── multi-device-app.png
+│       └── abstract.png
 ├── src/
-│   ├── App.js              # Main application component
+│   ├── App.js              # Main application component (includes SVG icons)
 │   └── index.js            # React entry point
 ├── firebase.json           # Firebase Hosting configuration
 ├── .firebaserc             # Firebase project settings
@@ -177,6 +187,37 @@ HTML template with:
 
 ### `firebase.json`
 Firebase Hosting configuration with SPA rewrites to support client-side routing.
+
+## Visual Assets
+
+### Product Mockup Images
+
+The `/public/images/` folder contains AI-generated product mockups:
+
+- **ai-dashboard.png** - AI chatbot analytics dashboard on laptop
+- **cloud-monitoring.png** - Cloud infrastructure monitoring dashboard
+- **mobile-app.png** - Mobile app on iPhone mockup
+- **multi-device-app.png** - Multi-device responsive app (hero image)
+- **abstract.png** - Circuit board tech pattern (hero background)
+
+### Custom SVG Icons
+
+Animated SVG icons are defined in `src/App.js`:
+
+- **AIIcon** - Neural network visualization with pulse animation
+- **CloudIcon** - Cloud with server rack and blinking status lights
+- **AppsIcon** - Phone mockup with app grid and code brackets
+- **HeroIllustration** - Floating network nodes (replaced by abstract.png)
+- **ProcessConnector** - Animated dashed line connecting process steps
+- **FloatingParticles** - Colored dots with floating animation
+
+### Replacing Images
+
+To update product mockups:
+1. Generate new images matching the dark theme (#0a0a0a background)
+2. Use Google Cloud colors: blue (#4285f4), green (#34a853), yellow (#fbbc04), red (#ea4335)
+3. Save to `/public/images/` with same filenames
+4. Rebuild and deploy
 
 ## Development Notes
 

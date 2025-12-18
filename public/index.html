@@ -160,6 +160,52 @@
         h4 {
           font-size: 16px !important;
         }
+
+        /* Hero section - stack text above image */
+        div[style*="grid-template-columns: 1fr 1fr"] {
+          grid-template-columns: 1fr !important;
+          text-align: center !important;
+        }
+
+        /* Hero image container */
+        div[style*="grid-template-columns: 1fr 1fr"] > div:last-child img {
+          max-width: 280px !important;
+          margin: 0 auto !important;
+        }
+
+        /* Hero buttons - stack on very small screens */
+        div[style*="display: flex"][style*="gap: 16px"] {
+          flex-wrap: wrap !important;
+          justify-content: center !important;
+        }
+
+        /* Hero trust badges - wrap */
+        div[style*="gap: 24px"][style*="color: #a0a0a0"] {
+          flex-wrap: wrap !important;
+          justify-content: center !important;
+          gap: 12px !important;
+        }
+
+        /* Product showcase grid */
+        div[style*="repeat(3, 1fr)"] {
+          grid-template-columns: 1fr !important;
+        }
+
+        /* CTO section grid */
+        div[style*="1fr auto"] {
+          grid-template-columns: 1fr !important;
+        }
+
+        /* CTO icon - center on mobile */
+        div[style*="1fr auto"] > div:last-child {
+          display: flex !important;
+          justify-content: center !important;
+        }
+
+        /* Process connector - hide on mobile */
+        svg[style*="position: absolute"] {
+          display: none !important;
+        }
       }
     </style>
 
