@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeniLani Consulting - AI & Technology Solutions for Hawaii Businesses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+            @page {
+                size: letter;
+                margin: 0.5in;
+            }
+        }
+
+        .gradient-ocean {
+            background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 50%, #14b8a6 100%);
+        }
+
+        .gradient-sunset {
+            background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+        }
+
+        .service-card {
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .icon-circle {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 28px;
+            margin: 0 auto 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-cyan-50 p-4 md:p-8">
+    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden">
+
+        <!-- Header -->
+        <header class="gradient-ocean text-white p-8 md:p-12 text-center relative overflow-hidden">
+            <div class="relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-3 tracking-tight">LeniLani Consulting</h1>
+                <p class="text-xl md:text-2xl font-light mb-2 text-cyan-50">AI & Technology Solutions for Hawaii</p>
+                <div class="inline-block bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full mt-4">
+                    <p class="text-sm md:text-base font-medium">Empowering Local Businesses with Enterprise Technology</p>
+                </div>
+            </div>
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full -ml-24 -mb-24"></div>
+        </header>
+
+        <!-- Services Section -->
+        <section class="p-8 md:p-12 bg-gradient-to-br from-white to-slate-50">
+            <h2 class="text-3xl font-bold text-center mb-8 text-slate-800">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <!-- AI Consulting -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500">
+                    <div class="icon-circle bg-gradient-to-br from-cyan-500 to-blue-600 text-white">
+                        🤖
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2 text-slate-800">AI Consulting</h3>
+                    <p class="text-sm text-center text-slate-600">Strategic AI implementation tailored to your business goals</p>
+                </div>
+
+                <!-- Custom Chatbots -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
+                    <div class="icon-circle bg-gradient-to-br from-blue-500 to-indigo-600 text-white">
+                        💬
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2 text-slate-800">Custom Chatbots</h3>
+                    <p class="text-sm text-center text-slate-600">24/7 customer engagement with intelligent automation</p>
+                </div>
+
+                <!-- Data Analytics -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-teal-500">
+                    <div class="icon-circle bg-gradient-to-br from-teal-500 to-cyan-600 text-white">
+                        📊
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2 text-slate-800">Data Analytics</h3>
+                    <p class="text-sm text-center text-slate-600">Transform data into actionable business insights</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <!-- Fractional CTO -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-orange-500">
+                    <div class="icon-circle bg-gradient-to-br from-orange-500 to-red-600 text-white">
+                        👨‍💼
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2 text-slate-800">Fractional CTO</h3>
+                    <p class="text-sm text-center text-slate-600">Executive tech leadership without the full-time cost</p>
+                </div>
+
+                <!-- HubSpot Solutions -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-amber-500">
+                    <div class="icon-circle bg-gradient-to-br from-amber-500 to-orange-600 text-white">
+                        🎯
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2 text-slate-800">HubSpot Solutions</h3>
+                    <p class="text-sm text-center text-slate-600">Complete CRM setup, automation & optimization</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Differentiators -->
+        <section class="p-8 md:p-12 bg-slate-50">
+            <h2 class="text-3xl font-bold text-center mb-8 text-slate-800">Why Choose LeniLani?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-full flex items-center justify-center text-3xl">
+                        🏝️
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-slate-800">Local Hawaii Expertise</h3>
+                    <p class="text-sm text-slate-600">Deep understanding of Hawaii's unique business environment and local market needs</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-3xl">
+                        ⚡
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-slate-800">AI Specialization</h3>
+                    <p class="text-sm text-slate-600">Cutting-edge AI solutions that give you a competitive advantage in your market</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center text-3xl">
+                        🔧
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-slate-800">Comprehensive Solutions</h3>
+                    <p class="text-sm text-slate-600">Full-spectrum technology services from strategy to implementation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Propositions -->
+        <section class="p-8 md:p-12 bg-white">
+            <h2 class="text-3xl font-bold text-center mb-8 text-slate-800">The LeniLani Advantage</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 font-bold text-lg">
+                        ✓
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 mb-1">Enterprise Technology, Local Prices</h3>
+                        <p class="text-sm text-slate-600">Access to Fortune 500-level solutions scaled for Hawaii SMBs</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 font-bold text-lg">
+                        ✓
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 mb-1">Rapid Implementation</h3>
+                        <p class="text-sm text-slate-600">Get up and running quickly with proven frameworks and templates</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 font-bold text-lg">
+                        ✓
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 mb-1">Flexible Engagement Models</h3>
+                        <p class="text-sm text-slate-600">Project-based, retainer, or fractional arrangements to fit your needs</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 font-bold text-lg">
+                        ✓
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 mb-1">Ongoing Support & Training</h3>
+                        <p class="text-sm text-slate-600">Your success is our success - we're partners, not just vendors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hawaii Market Focus -->
+        <section class="p-8 md:p-12 bg-gradient-to-br from-cyan-50 to-teal-50">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="text-5xl mb-4">🌺</div>
+                <h2 class="text-3xl font-bold mb-4 text-slate-800">Built for Hawaii Businesses</h2>
+                <p class="text-lg text-slate-700 mb-6">
+                    We understand the unique challenges facing small to medium businesses in Hawaii.
+                    From tourism and hospitality to retail and professional services, we bring mainland
+                    innovation with island sensibility.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-2xl font-bold text-cyan-600 mb-1">100%</div>
+                        <div class="text-xs text-slate-600">Hawaii-Based</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-2xl font-bold text-cyan-600 mb-1">24/7</div>
+                        <div class="text-xs text-slate-600">AI Support</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-2xl font-bold text-cyan-600 mb-1">5+</div>
+                        <div class="text-xs text-slate-600">Core Services</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-2xl font-bold text-cyan-600 mb-1">∞</div>
+                        <div class="text-xs text-slate-600">Possibilities</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="gradient-sunset text-white p-8 md:p-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
+            <p class="text-lg md:text-xl mb-6 text-orange-50">
+                Let's discuss how AI and technology can drive your growth
+            </p>
+
+            <div class="bg-white/20 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                    <div>
+                        <div class="font-semibold mb-2 flex items-center">
+                            <span class="mr-2">📍</span> Location
+                        </div>
+                        <div class="text-sm text-orange-50">
+                            1050 Queen Street, Suite 100<br/>
+                            Honolulu, Hawaii 96814
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold mb-2 flex items-center">
+                            <span class="mr-2">📧</span> Get in Touch
+                        </div>
+                        <div class="text-sm text-orange-50">
+                            Email: info@lenilani.com<br/>
+                            Schedule a consultation today
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inline-block">
+                <a href="mailto:info@lenilani.com" class="inline-block bg-white text-orange-600 font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-shadow text-lg no-print">
+                    Start Your AI Journey →
+                </a>
+                <p class="text-sm mt-4 text-orange-50 print:hidden">Free initial consultation for Hawaii businesses</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-slate-800 text-slate-300 p-6 text-center text-sm">
+            <p>&copy; 2024 LeniLani Consulting. Proudly serving Hawaii businesses with world-class technology solutions.</p>
+            <p class="mt-2 text-xs text-slate-400">AI Consulting | Custom Chatbots | Data Analytics | Fractional CTO | HubSpot Solutions</p>
+        </footer>
+    </div>
+</body>
+</html>
