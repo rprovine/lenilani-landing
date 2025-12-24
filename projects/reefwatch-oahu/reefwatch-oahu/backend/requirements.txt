@@ -1,0 +1,48 @@
+# FastAPI Backend Dependencies
+fastapi==0.115.*
+uvicorn[standard]==0.32.*
+pydantic==2.*
+pydantic-settings==2.*
+
+# Google Cloud
+google-cloud-bigquery==3.*
+google-cloud-logging==3.*
+google-cloud-storage==2.*
+
+# AI Integration
+anthropic==0.40.*
+
+# Data Processing
+pandas==2.*
+numpy==1.*
+
+# HTTP Client
+httpx==0.28.*
+aiohttp==3.*
+
+# Rate Limiting
+slowapi==0.1.*
+
+# Caching
+cachetools==5.*
+
+# Date/Time
+python-dateutil==2.*
+
+# Environment
+python-dotenv==1.*
+
+# Testing
+pytest==8.*
+pytest-asyncio==0.24.*
+pytest-cov==5.*
+httpx==0.28.*
+
+# Linting
+ruff==0.8.*
+mypy==1.*
+
+# Type stubs
+types-cachetools==5.*
+types-python-dateutil==2.*
+pandas-stubs==2.*

@@ -1,0 +1,39 @@
+# ReefWatch Oahu - Terraform Variables Example
+# Copy this file to terraform.tfvars and fill in your values
+
+# Required: GCP Project ID
+project_id = "your-gcp-project-id"
+
+# Optional: GCP Region (default: us-central1)
+region = "us-central1"
+
+# Optional: Environment (default: production)
+environment = "production"
+
+# Optional: Docker image tag (default: latest)
+image_tag = "latest"
+
+# Optional: Backend configuration
+backend_cpu           = "1"
+backend_memory        = "512Mi"
+backend_min_instances = 0
+backend_max_instances = 10
+
+# Optional: Frontend configuration
+frontend_cpu           = "1"
+frontend_memory        = "256Mi"
+frontend_min_instances = 0
+frontend_max_instances = 5
+
+# Optional: BigQuery configuration
+bigquery_dataset  = "reefwatch"
+bigquery_location = "US"
+
+# Optional: Data retention (days)
+data_retention_days = 365
+
+# Optional: Alert email (leave empty to disable)
+alert_email = ""
+
+# Optional: Custom domain (leave empty to use Cloud Run URLs)
+domain = ""

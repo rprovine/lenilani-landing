@@ -1,0 +1,38 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '--build-arg'
+      - 'NEXT_PUBLIC_API_URL=https://reefwatch-backend-367391391780.us-central1.run.app'
+      - '--build-arg'
+      - 'NEXT_PUBLIC_MAPBOX_TOKEN=pk.eyJ1IjoicnByb3ZpbmUiLCJhIjoiY21qZGJ0cTd5MDU1OTNlcHEwODlwbnljMiJ9.G80SpaZvucjrysQ0muwC5Q'
+      - '-t'
+      - 'us-central1-docker.pkg.dev/reefwatch-oahu/cloud-run-source-deploy/reefwatch-frontend:latest'
+      - '.'
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'us-central1-docker.pkg.dev/reefwatch-oahu/cloud-run-source-deploy/reefwatch-frontend:latest'
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'reefwatch-frontend'
+      - '--image'
+      - 'us-central1-docker.pkg.dev/reefwatch-oahu/cloud-run-source-deploy/reefwatch-frontend:latest'
+      - '--region'
+      - 'us-central1'
+      - '--platform'
+      - 'managed'
+      - '--allow-unauthenticated'
+      - '--port'
+      - '3000'
+      - '--memory'
+      - '512Mi'
+      - '--min-instances'
+      - '0'
+      - '--max-instances'
+      - '10'
+images:
+  - 'us-central1-docker.pkg.dev/reefwatch-oahu/cloud-run-source-deploy/reefwatch-frontend:latest'

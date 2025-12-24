@@ -1,0 +1,12 @@
+# Cloud Functions dependencies for data ingestion
+functions-framework==3.*
+google-cloud-bigquery==3.*
+google-cloud-logging==3.*
+google-cloud-storage==2.*
+requests==2.*
+pandas==2.*
+numpy==1.*
+xarray==2024.*
+netCDF4==1.*
+retry==0.9.*
+python-dateutil==2.*

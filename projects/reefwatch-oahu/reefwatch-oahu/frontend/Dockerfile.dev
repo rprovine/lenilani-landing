@@ -1,0 +1,25 @@
+# ReefWatch Oahu - Frontend Development Dockerfile
+# Supports hot reloading for development
+
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY package.json package-lock.json* ./
+
+# Install all dependencies (including dev)
+RUN npm install
+
+# Copy source
+COPY . .
+
+# Environment
+ENV NODE_ENV=development \
+    PORT=3000
+
+# Expose port
+EXPOSE 3000
+
+# Run development server
+CMD ["npm", "run", "dev"]
